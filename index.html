@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de desarrollador Full Stack. Proyectos, habilidades y experiencia en desarrollo de software.">
+    <meta name="author" content="Juan Esteban Marin Arango">
+
+    <title>Juan Esteban | Full Stack Developer</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <nav class="navbar container" aria-label="Navegación principal">
+
+            <a href="#inicio" class="logo">
+                Juan<span>Esteban.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button id="themeButton" class="theme-button"
+                    aria-label="Cambiar tema">
+                ☀
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Inicio -->
+        <section id="inicio" class="hero container">
+
+            <div class="hero-content">
+                <span class="greeting">¡Hola! Soy</span>
+
+                <h1>Juan Esteban <span>Marin Arango</span></h1>
+
+                <h2>Desarrollador Full Stack</h2>
+
+                <p>
+                    Soy Ingeniero de Sistemas en formación, apasionado
+                    por la tecnología y el desarrollo de software.
+                    Me gusta construir soluciones digitales que
+                    resuelvan problemas reales mediante aplicaciones
+                    modernas y funcionales.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">
+                        Ver proyectos
+                    </a>
+
+                    <a href="#contacto" class="btn btn-secondary">
+                        Contactarme
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="assets/profile.png"
+                     alt="Fotografía de Juan Esteban Marin Arango"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="profile-placeholder" aria-hidden="true">
+                    JE
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="section container">
+
+            <div class="section-heading">
+                <span class="section-subtitle">Conóceme</span>
+                <h2>Sobre mí</h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    Soy un desarrollador de software con experiencia
+                    en el desarrollo de aplicaciones web frontend y
+                    backend. He trabajado con tecnologías como Angular,
+                    Spring Boot, Java, C# y .NET.
+                </p>
+
+                <p>
+                    Durante mi formación académica y experiencia
+                    profesional he participado en proyectos de
+                    desarrollo y migración de sistemas, trabajando
+                    con bases de datos, servicios REST, arquitectura
+                    de software y herramientas de desarrollo.
+                </p>
+
+                <p>
+                    Mi objetivo es continuar creciendo como
+                    profesional, aprender nuevas tecnologías y
+                    aportar soluciones innovadoras a los equipos
+                    de trabajo.
+                </p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>Full Stack</h3>
+                    <p>Perfil de desarrollo</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>REST API</h3>
+                    <p>Desarrollo backend</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>SQL</h3>
+                    <p>Gestión de bases de datos</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="section section-alt">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-subtitle">Tecnologías</span>
+                    <h2>Mis habilidades</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript y Angular.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Backend</h3>
+                        <p>Java, Spring Boot, C# y .NET.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🗄️</div>
+                        <h3>Bases de datos</h3>
+                        <p>MySQL, MariaDB y SQL.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🐳</div>
+                        <h3>Herramientas</h3>
+                        <p>Git, GitHub, Docker, Postman y Swagger.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="section container">
+
+            <div class="section-heading">
+                <span class="section-subtitle">Mi trabajo</span>
+                <h2>Proyectos destacados</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-image project-one">
+                        <span>🚗</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Sistema de Movilidad UAM</h3>
+
+                        <p>
+                            Migración de una plataforma web de movilidad
+                            utilizando Spring Boot, Angular y MariaDB.
+                            Implementación de servicios REST y
+                            arquitectura por capas.
+                        </p>
+
+                        <div class="tags">
+                            <span>Angular</span>
+                            <span>Spring Boot</span>
+                            <span>MariaDB</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-two">
+                        <span>🏋️</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Sistema de Gestión de Gimnasio</h3>
+
+                        <p>
+                            Aplicación web para administrar miembros,
+                            rutinas, pagos, asistencias y vencimientos
+                            de membresías.
+                        </p>
+
+                        <div class="tags">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-three">
+                        <span>📅</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Sistema de Gestión de Citas</h3>
+
+                        <p>
+                            Proyecto académico orientado a gestionar
+                            citas académicas, disponibilidad de
+                            coordinadores y notificaciones.
+                        </p>
+
+                        <div class="tags">
+                            <span>Angular</span>
+                            <span>Spring Boot</span>
+                            <span>Google Calendar</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-subtitle">Hablemos</span>
+                    <h2>Contacto</h2>
+                    <p>
+                        ¿Tienes una oportunidad o proyecto?
+                        Me gustaría conocer más.
+                    </p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Escribe tu nombre"
+                               autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="correo@ejemplo.com"
+                               autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject"
+                               placeholder="Motivo del mensaje" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message"
+                                  rows="5"
+                                  placeholder="Escribe tu mensaje..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Enviar mensaje
+                    </button>
+
+                    <p id="formStatus" class="form-status"
+                       role="status" aria-live="polite"></p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © <span id="currentYear"></span>
+                Juan Esteban Marin Arango.
+                Todos los derechos reservados.
+            </p>
+
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
